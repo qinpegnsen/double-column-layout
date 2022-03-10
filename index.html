@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+      .left {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background: red;
+      }
+
+      .main {
+        height: 200px;
+        background: #000;
+        color: green;
+        /* overflow:auto; */
+        /* 其实不创建BFC 视觉上也可可以，跑到下面了 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- 如果调换位置到下面就不行了 -->
+
+      <div class="left">left</div>
+      <div class="main">main</div>
+    </div>
+  </body>
+  <script>
+    let str = `sfsfs水电费nsfdsfasafasfdssdfsf水电费是
+`;
+    console.log(str);
+  </script>
+</html>
